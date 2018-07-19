@@ -1,0 +1,49 @@
+/*
+ Theme Name:     Divi Child
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+@import url("../Divi/style.css");
+
+/* codes to zoom images and hide the file name */
+/*----------Custom Divi Gallery----------*/
+ 
+.et_overlay {
+    display: none;
+}
+ 
+.mfp-title {
+    display: none;
+}
+ 
+.et_pb_gallery_grid .et_pb_gallery_item img {
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
+}
+ 
+.et_pb_gallery_grid .et_pb_gallery_item img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+ 
+.et_pb_gallery_grid .et_pb_gallery_item {
+    padding: 2px;
+    width: 20%!important;
+    clear: right!important;
+}
+ 
+@media only screen and (max-width: 479px) {
+     
+.et_pb_column .et_pb_grid_item:nth-child(n) {
+    width: 33%!important;
+}
+}
+
